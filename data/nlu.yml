@@ -1,0 +1,128 @@
+version: "3.1"
+
+nlu:
+- intent: sapa
+  examples: |
+    - hai
+    - halo
+    - apa kabar
+    - selamat pagi
+    - selamat siang
+    - selamat sore
+    - selamat malam
+    - halo, apa kabar
+    - hai semuanya
+    - hai, bagaimana kabarmu?
+
+- intent: selamat_tinggal
+  examples: |
+    - sampai jumpa
+    - dadah
+    - selamat tinggal
+    - sampai nanti
+    - jumpa lagi
+    - selamat malam, sampai jumpa
+    - saya harus pergi
+    - baik, sampai nanti
+    - sampai bertemu lagi
+
+- intent: setuju
+  examples: |
+    - ya
+    - tentu saja
+    - benar
+    - betul
+    - setuju
+    - pastinya
+    - tentu
+    - baiklah
+
+- intent: tidak_setuju
+  examples: |
+    - tidak
+    - saya tidak setuju
+    - salah
+    - bukan
+    - tidak betul
+    - tidak mungkin
+    - tidak seperti itu
+
+- intent: mood_baik
+  examples: |
+    - saya merasa senang
+    - hari ini luar biasa
+    - saya sangat bahagia
+    - saya baik-baik saja
+    - saya merasa hebat
+    - saya sedang bahagia
+    - luar biasa
+    - menyenangkan sekali
+
+- intent: mood_buruk
+  examples: |
+    - saya sedang sedih
+    - hari ini buruk
+    - saya merasa kecewa
+    - saya tidak merasa baik
+    - sangat mengecewakan
+    - saya merasa sangat buruk
+    - hari yang menyedihkan
+    - saya tidak senang
+
+- intent: tantangan_bot
+  examples: |
+    - apakah kamu bot?
+    - apakah saya berbicara dengan manusia?
+    - kamu bot atau manusia?
+    - apakah kamu robot?
+    - apa kamu mesin?
+
+- intent: informasi_desa
+  examples: |
+    - Apa informasi tentang desa?
+    - Bagaimana kondisi Desa Tritih Wetan?
+    - Ceritakan tentang Desa Tritih Wetan
+    - Jelaskan tentang desa ini
+    - Berikan informasi tentang desa
+
+- intent: kontak_desa
+  examples: |
+    - Siapa kepala Desa Tritih Wetan?
+    - Bagaimana saya bisa menghubungi Desa Tritih Wetan?
+    - Berikan kontak desa ini
+    - Kontak Desa Tritih Wetan siapa?
+    - Saya butuh informasi kontak desa
+
+- intent: layanan_desa
+  examples: |
+    - Apa saja layanan di Desa Tritih Wetan?
+    - Jelaskan tentang layanan desa ini
+    - Layanan apa yang tersedia di desa?
+    - Berikan informasi tentang layanan desa
+    - Apa layanan utama desa ini?
+
+- intent: budaya_desa
+  examples: |
+    - Apa budaya khas Desa Tritih Wetan?
+    - Ceritakan tentang adat istiadat desa ini
+    - Jelaskan budaya yang ada di desa
+    - Budaya apa yang unik dari desa ini?
+    - Adat istiadat desa ini seperti apa?
+
+- intent: pendidikan_desa
+  examples: |
+    - Bagaimana fasilitas pendidikan di Desa Tritih Wetan?
+    - Info tentang pendidikan desa ini
+    - Berikan informasi pendidikan di desa
+    - Apa saja sarana pendidikan di desa ini?
+    - Pendidikan desa Tritih Wetan seperti apa?  
+
+- intent: terima_kasih
+  examples: |
+    - terima kasih
+    - makasih
+    - trims
+    - thanks
+    - terima kasih banyak
+    - makasih ya
+    - saya berterima kasih

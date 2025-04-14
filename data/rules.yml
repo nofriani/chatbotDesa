@@ -1,0 +1,44 @@
+version: "3.1"
+
+rules:
+
+- rule: Ucapkan selamat tinggal ketika pengguna mengatakan selamat tinggal
+  steps:
+    - intent: selamat_tinggal
+    - action: utter_selamat_tinggal
+
+- rule: Ucapkan 'Saya adalah bot' ketika pengguna menantang bot
+  steps:
+    - intent: tantangan_bot
+    - action: utter_iamabot
+
+- rule: Jawab informasi desa
+  steps:
+    - intent: informasi_desa
+    - action: action_informasi_desa
+
+- rule: Jawab informasi kontak desa
+  steps:
+    - intent: kontak_desa
+    - action: action_informasi_desa
+
+- rule: Jawab layanan desa
+  steps:
+    - intent: layanan_desa
+    - action: action_informasi_desa
+
+- rule: Jawab budaya desa
+  steps:
+    - intent: budaya_desa
+    - action: action_informasi_desa
+
+- rule: Jawab pendidikan desa
+  steps:
+    - intent: pendidikan_desa
+    - action: action_informasi_desa
+
+- rule: Handle thank you message
+  steps:
+    - intent: terima_kasih
+    - action: utter_thank_you
+    

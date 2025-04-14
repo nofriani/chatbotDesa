@@ -1,0 +1,58 @@
+version: "3.1"
+
+stories:
+
+- story: jalur bahagia
+  steps:
+  - intent: sapa
+  - action: utter_sapa
+  - intent: mood_baik
+  - action: utter_mood_baik
+
+- story: jalur sedih 1
+  steps:
+  - intent: sapa
+  - action: utter_sapa
+  - intent: mood_buruk
+  - action: utter_mood_buruk
+  - intent: setuju
+  - action: utter_mood_baik
+
+- story: jalur sedih 2
+  steps:
+  - intent: sapa
+  - action: utter_sapa
+  - intent: mood_buruk
+  - action: utter_mood_buruk
+  - intent: tidak_setuju
+  - action: utter_selamat_tinggal
+
+- story: informasi desa
+  steps:
+  - intent: informasi_desa
+  - action: action_informasi_desa
+
+- story: informasi kontak desa
+  steps:
+  - intent: kontak_desa
+  - action: action_informasi_desa
+
+- story: layanan desa
+  steps:
+  - intent: layanan_desa
+  - action: action_informasi_desa
+
+- story: budaya desa
+  steps:
+  - intent: budaya_desa
+  - action: action_informasi_desa
+
+- story: pendidikan desa
+  steps:
+  - intent: pendidikan_desa
+  - action: action_informasi_desa
+  
+- story: User says thank you
+  steps:
+    - intent: terima_kasih
+    - action: utter_thank_you

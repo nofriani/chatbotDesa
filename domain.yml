@@ -1,0 +1,43 @@
+version: "3.1"
+
+intents:
+  - sapa
+  - selamat_tinggal
+  - setuju
+  - tidak_setuju
+  - mood_baik
+  - mood_buruk
+  - tantangan_bot
+  - informasi_desa
+  - kontak_desa
+  - layanan_desa
+  - budaya_desa
+  - pendidikan_desa
+  - terima_kasih
+responses:
+  utter_thank_you:
+    - text: "Senang bisa membantu! Apakah Anda ingin melanjutkan sesi chat?"
+  utter_sapa:
+    - text: "Hai! Informasi apa yang kamu butuhkan?"
+  utter_selamat_tinggal:
+    - text: "Sampai jumpa! Semoga harimu menyenangkan!"
+  utter_setuju:
+    - text: "Terima kasih sudah setuju!"
+  utter_tidak_setuju:
+    - text: "Oke, kalau begitu tidak apa-apa."
+  utter_mood_baik:
+    - text: "Senang mendengarnya! Terus semangat!"
+  utter_mood_buruk:
+    - text: "Sayang sekali, semoga hari kamu segera membaik."
+  utter_iamabot:
+    - text: "Saya adalah chatbot dengan framework RASA, yang membantu kamu dengan berbagai informasi!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+actions:
+  - action_informasi_desa
+
+
